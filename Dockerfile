@@ -1,4 +1,4 @@
-FROM            ubuntu:12.04
+FROM            ubuntu:16.04
 MAINTAINER      James Sharp <james@ortootech.com>
 
 RUN        echo 'deb http://archive.ubuntu.com/ubuntu precise main universe' > /etc/apt/sources.list
