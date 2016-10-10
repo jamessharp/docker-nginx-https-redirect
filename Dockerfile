@@ -4,5 +4,4 @@ MAINTAINER      Damon Zirkler <dzirkler@steelcase.com>
 # Expose port 80
 EXPOSE 80
 
-#ADD default /etc/nginx/sites-available/default
 ADD default /etc/nginx/conf.d/default.conf
