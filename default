@@ -1,4 +1,13 @@
 server {
     listen         80;
-    return 301 https://$host$request_uri;
+    server_tokens  off;
+
+    location / {
+      return 301 https://$host$request_uri;
+    }
+
+    location ~ ^/https-redirect-health$ {
+      root /usr/share/nginx/www;
+      rewrite ^ /index.html break;
+    }
 }
